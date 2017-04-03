@@ -1,3 +1,4 @@
+// user-interface logic
 function Places(location,landmark,year){
   this.mylocation = location;
   this.landmark= landmark;
@@ -8,7 +9,7 @@ Places.prototype.destination = function(){
   return this.mylocation;
 }
 
-
+//Business-logic
 $(document).ready(function(){
   $("form#new-place").submit(function(event){
     event.preventDefault();
